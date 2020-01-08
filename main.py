@@ -12,7 +12,7 @@ from flask_mail import Mail
 import os
 from pymongo import MongoClient
 
-client = MongoClient("mongodb+srv://udaram:Nq70tTcS6yz2U1We@cluster0-dpehf.mongodb.net/test?retryWrites=true&w=majority")
+client = MongoClient("mongodb+srv://udaram:<password>@cluster0-dpehf.mongodb.net/test?retryWrites=true&w=majority")
 db = client.CodingBlogs #database name
 
 params=db.config.find_one()
